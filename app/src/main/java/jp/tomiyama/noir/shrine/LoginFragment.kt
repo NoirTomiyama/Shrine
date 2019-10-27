@@ -28,6 +28,7 @@ class LoginFragment : Fragment() {
       } else {
         // Clear the error.
         password_text_input.error = null
+        (activity as NavigationHost).navigateTo(ProductGridFragment(), false) // Navigate to the next Fragment
       }
     }
 
